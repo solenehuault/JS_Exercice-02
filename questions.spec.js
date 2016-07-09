@@ -48,7 +48,7 @@ describe('Les chaines de caractères : ', function () {
         var result = NombreEspaceString('Sire ouvrez on en a gros!');
         expect(result).toEqual(5);
     });
-    /*********** BONUS 
+     
     it('Inverser une chaine de caractères', function () {
         var result = InverseString('Après demain, à partir d\'aujourd\'hui?');
         expect(result).toEqual('?iuh\'druojua\'d ritrap à ,niamed sèrpA');
@@ -62,7 +62,6 @@ describe('Les chaines de caractères : ', function () {
         expect(result).toEqual(19);
 
     });
-    ******************/
 })
 describe('Les nombres et opérations mathématiques : ', function () {
     it('Calculer la puissance d\'un nombre par rapport à un autre (x à la puissance y)', function () {
@@ -77,7 +76,7 @@ describe('Les nombres et opérations mathématiques : ', function () {
         var result = valeurAbsolueArray([-5,-50,-25,-568]);
         expect(result).toEqual([5,50,25,568]);
     });
-    /********* BONUS 
+     
     it('Calculer la surface d\'un cercle en fonction de son rayon. L\'arondir à l\'entier le plus proche', function () {
         var result = sufaceCercle(5);
         expect(result).toEqual(79);
@@ -90,5 +89,4 @@ describe('Les nombres et opérations mathématiques : ', function () {
         var result = calculIMC(65, 1.75);
         expect(result).toEqual(21.22);
     });
-*****************/
 })

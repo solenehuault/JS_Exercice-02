@@ -41,11 +41,12 @@ function IsString(str) {
 };
 
 function AfficherExtensionString(str) {
-	
+	var pos = str.lastIndexOf(".");
+	return str.substring(pos+1, str.length);
 };
 
 function NombreEspaceString(str) {
-	return (str.match(/[" "]/g).length);
+	return str.match(/[" "]/g).length;
 };
 
 function InverseString(str) {
@@ -57,24 +58,44 @@ function minusculeString(str) {
 };
 
 function countDistinctCar(str) {
-
+	var listeChar = [];
+	for (var i = 0 ; i < str.length ; i++) {
+		var index = str.charAt(i);
+		listeChar[index] = "Coucou Toto !";
+	}
+	var j = 0;
+	//Parcours mon object
+	for (x in listeChar) {
+		j++;
+	}
+	return j;
 };
 
 
 
 
-
-
-
-
-function CalculPuissance(n, e) {
-
+function calculPuissance(n, e) {
+	return Math.pow(n, e);
 };
 
 function valeurAbsolue(n) {
-
+	return Math.abs(n);
 };
 
 function valeurAbsolueArray(array) {
+	return array.map(Math.abs);
+};
 
+function sufaceCercle(n) {
+	var r = Math.PI * n * n;
+	return Math.round(r);
+};
+
+function hypothenuse(a, b) {
+	return Math.sqrt(a * a + b * b);
+};
+
+function calculIMC(poid, taille) {
+	var r = poid / (taille * taille);
+	return r.toFixed(2);
 };
