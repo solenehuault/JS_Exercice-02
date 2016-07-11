@@ -50,7 +50,7 @@ function NombreEspaceString(str) {
 };
 
 function InverseString(str) {
-	return str.reverse();
+	return str.split("").reverse().join("");
 };
 
 function minusculeString(str) {
@@ -97,5 +97,5 @@ function hypothenuse(a, b) {
 
 function calculIMC(poid, taille) {
 	var r = poid / (taille * taille);
-	return r.toFixed(2);
+	return Number.parseFloat(r.toFixed(2));
 };
